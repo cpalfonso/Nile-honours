@@ -20,6 +20,7 @@ def backward():
     xml_filename = os.path.join(
         DIR,
         '..',
+        '..',
         'inputs',
         SCENARIO,
         f'input_back_{SCENARIO}.xml',
@@ -36,6 +37,7 @@ def forward():
     xml_filename = os.path.join(
         DIR,
         '..',
+        '..',
         'inputs',
         SCENARIO,
         f'input_forward_{SCENARIO}_prerift.xml',
@@ -46,6 +48,7 @@ def forward():
 
     xml_filename = os.path.join(
         DIR,
+        '..',
         '..',
         'inputs',
         SCENARIO,
