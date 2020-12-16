@@ -1,9 +1,13 @@
 import os
+import sys
 
 from badlands.model import Model as badlandsModel
 
 SCENARIO = 'sealevel'
 DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, DIR)
+
+import combine_outputs
 
 RIFT_TIME = 20.0
 END_TIME = 0.0
@@ -59,3 +63,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    combine_outputs.main()
