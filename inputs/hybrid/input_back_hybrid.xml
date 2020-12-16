@@ -3,7 +3,7 @@
     <grid>
         <boundary>slope</boundary>
         <resfactor>2</resfactor>
-        <demfile>./data/topo0Ma.csv</demfile>
+        <demfile>../../inputs/hybrid/data/topo0Ma.csv</demfile>
     </grid>
     <time>
         <start>-40000000.0</start>
@@ -24,7 +24,7 @@
     <sea>
         <position>0.0</position>
         <limit>200.0</limit>
-        <curve>./data/sealevel_backward.csv</curve>
+        <curve>../../inputs/hybrid/data/sealevel_backward.csv</curve>
     </sea>
     <tectonic>
         <disp3d>1</disp3d>
@@ -34,202 +34,202 @@
         <disp>
             <dstart>-40000000.0</dstart>
             <dend>-39000000.0</dend>
-            <dfile>./data/backdisp/disp1.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp1.csv</dfile>
         </disp>
         <disp>
             <dstart>-39000000.0</dstart>
             <dend>-38000000.0</dend>
-            <dfile>./data/backdisp/disp2.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp2.csv</dfile>
         </disp>
         <disp>
             <dstart>-38000000.0</dstart>
             <dend>-37000000.0</dend>
-            <dfile>./data/backdisp/disp3.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp3.csv</dfile>
         </disp>
         <disp>
             <dstart>-37000000.0</dstart>
             <dend>-36000000.0</dend>
-            <dfile>./data/backdisp/disp4.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp4.csv</dfile>
         </disp>
         <disp>
             <dstart>-36000000.0</dstart>
             <dend>-35000000.0</dend>
-            <dfile>./data/backdisp/disp5.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp5.csv</dfile>
         </disp>
         <disp>
             <dstart>-35000000.0</dstart>
             <dend>-34000000.0</dend>
-            <dfile>./data/backdisp/disp6.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp6.csv</dfile>
         </disp>
         <disp>
             <dstart>-34000000.0</dstart>
             <dend>-33000000.0</dend>
-            <dfile>./data/backdisp/disp7.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp7.csv</dfile>
         </disp>
         <disp>
             <dstart>-33000000.0</dstart>
             <dend>-32000000.0</dend>
-            <dfile>./data/backdisp/disp8.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp8.csv</dfile>
         </disp>
         <disp>
             <dstart>-32000000.0</dstart>
             <dend>-31000000.0</dend>
-            <dfile>./data/backdisp/disp9.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp9.csv</dfile>
         </disp>
         <disp>
             <dstart>-31000000.0</dstart>
             <dend>-30000000.0</dend>
-            <dfile>./data/backdisp/disp10.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp10.csv</dfile>
         </disp>
         <disp>
             <dstart>-30000000.0</dstart>
             <dend>-29000000.0</dend>
-            <dfile>./data/backdisp/disp11.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp11.csv</dfile>
         </disp>
         <disp>
             <dstart>-29000000.0</dstart>
             <dend>-28000000.0</dend>
-            <dfile>./data/backdisp/disp12.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp12.csv</dfile>
         </disp>
         <disp>
             <dstart>-28000000.0</dstart>
             <dend>-27000000.0</dend>
-            <dfile>./data/backdisp/disp13.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp13.csv</dfile>
         </disp>
         <disp>
             <dstart>-27000000.0</dstart>
             <dend>-26000000.0</dend>
-            <dfile>./data/backdisp/disp14.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp14.csv</dfile>
         </disp>
         <disp>
             <dstart>-26000000.0</dstart>
             <dend>-25000000.0</dend>
-            <dfile>./data/backdisp/disp15.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp15.csv</dfile>
         </disp>
         <disp>
             <dstart>-25000000.0</dstart>
             <dend>-24000000.0</dend>
-            <dfile>./data/backdisp/disp16.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp16.csv</dfile>
         </disp>
         <disp>
             <dstart>-24000000.0</dstart>
             <dend>-23000000.0</dend>
-            <dfile>./data/backdisp/disp17.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp17.csv</dfile>
         </disp>
         <disp>
             <dstart>-23000000.0</dstart>
             <dend>-22000000.0</dend>
-            <dfile>./data/backdisp/disp18.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp18.csv</dfile>
         </disp>
         <disp>
             <dstart>-22000000.0</dstart>
             <dend>-21000000.0</dend>
-            <dfile>./data/backdisp/disp19.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp19.csv</dfile>
         </disp>
         <disp>
             <dstart>-21000000.0</dstart>
             <dend>-20000000.0</dend>
-            <dfile>./data/backdisp/disp20.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp20.csv</dfile>
         </disp>
         <disp>
             <dstart>-20000000.0</dstart>
             <dend>-19000000.0</dend>
-            <dfile>./data/backdisp/disp21.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp21.csv</dfile>
         </disp>
         <disp>
             <dstart>-19000000.0</dstart>
             <dend>-18000000.0</dend>
-            <dfile>./data/backdisp/disp22.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp22.csv</dfile>
         </disp>
         <disp>
             <dstart>-18000000.0</dstart>
             <dend>-17000000.0</dend>
-            <dfile>./data/backdisp/disp23.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp23.csv</dfile>
         </disp>
         <disp>
             <dstart>-17000000.0</dstart>
             <dend>-16000000.0</dend>
-            <dfile>./data/backdisp/disp24.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp24.csv</dfile>
         </disp>
         <disp>
             <dstart>-16000000.0</dstart>
             <dend>-15000000.0</dend>
-            <dfile>./data/backdisp/disp25.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp25.csv</dfile>
         </disp>
         <disp>
             <dstart>-15000000.0</dstart>
             <dend>-14000000.0</dend>
-            <dfile>./data/backdisp/disp26.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp26.csv</dfile>
         </disp>
         <disp>
             <dstart>-14000000.0</dstart>
             <dend>-13000000.0</dend>
-            <dfile>./data/backdisp/disp27.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp27.csv</dfile>
         </disp>
         <disp>
             <dstart>-13000000.0</dstart>
             <dend>-12000000.0</dend>
-            <dfile>./data/backdisp/disp28.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp28.csv</dfile>
         </disp>
         <disp>
             <dstart>-12000000.0</dstart>
             <dend>-11000000.0</dend>
-            <dfile>./data/backdisp/disp29.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp29.csv</dfile>
         </disp>
         <disp>
             <dstart>-11000000.0</dstart>
             <dend>-10000000.0</dend>
-            <dfile>./data/backdisp/disp30.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp30.csv</dfile>
         </disp>
         <disp>
             <dstart>-10000000.0</dstart>
             <dend>-9000000.0</dend>
-            <dfile>./data/backdisp/disp31.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp31.csv</dfile>
         </disp>
         <disp>
             <dstart>-9000000.0</dstart>
             <dend>-8000000.0</dend>
-            <dfile>./data/backdisp/disp32.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp32.csv</dfile>
         </disp>
         <disp>
             <dstart>-8000000.0</dstart>
             <dend>-7000000.0</dend>
-            <dfile>./data/backdisp/disp33.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp33.csv</dfile>
         </disp>
         <disp>
             <dstart>-7000000.0</dstart>
             <dend>-6000000.0</dend>
-            <dfile>./data/backdisp/disp34.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp34.csv</dfile>
         </disp>
         <disp>
             <dstart>-6000000.0</dstart>
             <dend>-5000000.0</dend>
-            <dfile>./data/backdisp/disp35.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp35.csv</dfile>
         </disp>
         <disp>
             <dstart>-5000000.0</dstart>
             <dend>-4000000.0</dend>
-            <dfile>./data/backdisp/disp36.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp36.csv</dfile>
         </disp>
         <disp>
             <dstart>-4000000.0</dstart>
             <dend>-3000000.0</dend>
-            <dfile>./data/backdisp/disp37.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp37.csv</dfile>
         </disp>
         <disp>
             <dstart>-3000000.0</dstart>
             <dend>-2000000.0</dend>
-            <dfile>./data/backdisp/disp38.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp38.csv</dfile>
         </disp>
         <disp>
             <dstart>-2000000.0</dstart>
             <dend>-1000000.0</dend>
-            <dfile>./data/backdisp/disp39.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp39.csv</dfile>
         </disp>
         <disp>
             <dstart>-1000000.0</dstart>
             <dend>0.0</dend>
-            <dfile>./data/backdisp/disp40.csv</dfile>
+            <dfile>../../inputs/hybrid/data/backdisp/disp40.csv</dfile>
         </disp>
     </tectonic>
     <outfolder>../../results/hybrid/back_hybrid</outfolder>
