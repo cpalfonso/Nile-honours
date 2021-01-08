@@ -7,3 +7,7 @@ Preferably, however, running the shell script `setup.sh` will download all input
 In order to run the models, `cd` into the appropriate subdirectory within the `scripts` directory (i.e. `scripts/{model_name}`), then run `python run_models.py`.
 Model outputs will be placed in the `results/{model_name}` directory.
 Running the models requires an installation of *Badlands* ([https://github.com/badlands-model/badlands](https://github.com/badlands-model/badlands)) in your Python environment.
+
+<br><br>
+
+![alt text](./results/fig.png "Hybrid scenario model results at 40&nbsp;Ma")
