@@ -10,4 +10,4 @@ Running the models requires an installation of *Badlands* ([https://github.com/b
 
 <br><br>
 
-![alt text](./results/fig.png "Hybrid scenario model results at 40&nbsp;Ma")
+![alt text](./results/fig.png "Hybrid scenario model results at 0&nbsp;Ma (present day)")

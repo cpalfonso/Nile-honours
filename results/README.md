@@ -5,4 +5,4 @@ Outputs include the results of both backward and forward models.
 
 <br><br>
 
-![alt text](./fig.png "Hybrid scenario model results at 40&nbsp;Ma")
+![alt text](./fig.png "Hybrid scenario model results at 0&nbsp;Ma (present day)")
