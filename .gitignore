@@ -6,3 +6,4 @@ __pycache__
 
 inputs/*/data
 results/*/
+tmp
