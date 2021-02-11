@@ -13,7 +13,9 @@ def _write_xml_to_file(data, filename, file_format='.xml'):
             file_format = '.' + file_format
     except AttributeError as e:
         raise TypeError('Invalid output format: {}'.format(file_format)) from e
-    filename = _check_filename(filename, file_format=file_format, in_out='output')
+    filename = _check_filename(filename,
+                               file_format=file_format,
+                               in_out='output')
 
     if file_format == '.xml':
         data.set('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')
