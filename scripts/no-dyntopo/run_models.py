@@ -23,7 +23,7 @@ def backward():
         '..',
         'inputs',
         SCENARIO,
-        f'input_back_{SCENARIO}.xml',
+        'input_back_{}.xml'.format(SCENARIO),
     )
     model = badlandsModel()
     model.load_xml(xml_filename)
@@ -40,7 +40,7 @@ def forward():
         '..',
         'inputs',
         SCENARIO,
-        f'input_forward_{SCENARIO}_prerift.xml',
+        'input_forward_{}_prerift.xml'.format(SCENARIO),
     )
     model = badlandsModel()
     model.load_xml(xml_filename)
@@ -52,7 +52,7 @@ def forward():
         '..',
         'inputs',
         SCENARIO,
-        f'input_forward_{SCENARIO}_postrift.xml',
+        'input_forward_{}_postrift.xml'.format(SCENARIO),
     )
     model = badlandsModel()
     model.load_xml(xml_filename)

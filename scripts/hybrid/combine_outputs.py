@@ -18,7 +18,7 @@ OUTPUT_DIR = os.path.join(
     '..', '..',
     'results',
     SCENARIO,
-    f'forward_{SCENARIO}',
+    'forward_{}'.format(SCENARIO),
 )
 
 
@@ -53,7 +53,7 @@ def main():
     for which in ['flow', 'tin']:
         xdmf_filename = os.path.join(
             OUTPUT_DIR,
-            f'{which}.series.xdmf',
+            '{}.series.xdmf'.format(which),
         )
         xml.generate_xdmf(
             xdmf_filename, which, num_steps, overwrite=True,
