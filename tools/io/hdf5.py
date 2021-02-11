@@ -22,14 +22,15 @@ def get_step(filename):
     '''
     if not isinstance(filename, str):
         raise TypeError(
-            f"{filename} is not of type 'str' "
-            + f"(type = {type(filename)})"
+            "{} is not of type 'str' ".format(filename)
+            + "(type = {})".format(type(filename))
         )
     if not (
         filename.endswith('.hdf5')
         or filename.endswith('.xmf')
     ):
-        raise ValueError(f"Invalid .hdf5 or .xmf filename: {filename}")
+        raise ValueError("Invalid .hdf5 or .xmf filename: "
+                         + "{}".format(filename))
     n = (
         filename.replace(
             'flow.time', ''
@@ -118,7 +119,8 @@ def copy_outputs(dir1, dir2=None, restart_step=None, delete=False):
                 continue
             src_step = get_step(f)
             dst_step = src_step + restart_step
-            dst = f.replace(f'time{src_step}', f'time{dst_step}')
+            dst = f.replace('time{}'.format(src_step),
+                            'time{}'.format(dst_step))
             dst = os.path.join(dst_dir, dst)
 
             if f.endswith('.hdf5'):
