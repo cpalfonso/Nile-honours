@@ -12,6 +12,10 @@ import combine_outputs
 RIFT_TIME = 20.0
 END_TIME = 0.0
 
+# Currently have to change Python working directory so that
+# Badlands understands relative file paths in XML input files
+os.chdir(DIR)
+
 
 def backward():
     '''
