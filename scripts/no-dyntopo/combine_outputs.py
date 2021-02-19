@@ -37,16 +37,15 @@ def main():
         dst_dir = os.path.join(OUTPUT_DIR, subdir)
         for f in os.listdir(src_dir):
             src = os.path.join(src_dir, f)
-            if not (
-                    src.endswith('.hdf5')
-                    or src.endswith('.xmf')
-            ):
+            if not (src.endswith('.hdf5')
+                    or src.endswith('.xmf')):
                 continue
             dst = os.path.join(dst_dir, f)
             shutil.copy2(src, dst)
+            os.remove(src)
 
     # Copy postrift
-    hdf5.copy_outputs(OUTPUT_DIR, output_postrift)
+    hdf5.copy_outputs(OUTPUT_DIR, output_postrift, delete=True)
 
     # Generate .xdmf files
     num_steps = int(abs(END_TIME - START_TIME) / DT) + 1
@@ -58,6 +57,10 @@ def main():
         xml.generate_xdmf(
             xdmf_filename, which, num_steps, overwrite=True,
         )
+
+    # Remove pre- and post-rift output directories
+    for i in [output_prerift, output_postrift]:
+        shutil.rmtree(i)
 
 
 if __name__ == "__main__":
