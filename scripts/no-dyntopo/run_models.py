@@ -64,7 +64,7 @@ def forward():
 
 
 def main():
-    backward()
+    # backward()
     forward()
 
 

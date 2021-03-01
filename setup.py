@@ -28,7 +28,7 @@ def main(scenarios):
     scenarios = set(scenarios)
     if not scenarios.issubset(ALL_SCENARIOS):
         raise ValueError(
-            f'Arguments must be one of the following: {ALL_SCENARIOS}'
+            'Arguments must be one of the following: {}'.format(ALL_SCENARIOS)
         )
     print('Creating necessary directories...\t', end='', flush=True)
     for scenario in scenarios:
@@ -43,7 +43,8 @@ def main(scenarios):
     print('Done')
 
     os.makedirs(os.path.join(DIRNAME, 'tmp'), exist_ok=True)
-    print(f'Downloading data from {DATA_URL}...\t', end='', flush=True)
+    print('Downloading data from {}...\t'.format(DATA_URL),
+          end='', flush=True)
     with request.urlopen(DATA_URL) as response, \
             NamedTemporaryFile() as outfile, \
             TemporaryDirectory() as tmp_dir:

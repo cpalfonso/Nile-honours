@@ -117,3 +117,39 @@ def _check_filename(filename, file_format='.xml', in_out=None):
         raise TypeError(e_m) from e
 
     return filename
+
+
+def get_sealevel(filename):
+    '''
+    Get the sealevel from a given TIN .xmf file.
+    '''
+    try:
+        filename = os.path.abspath(filename)
+        if not os.path.isfile(filename):
+            raise FileNotFoundError("'{}' not found.".format(filename))
+        if not (
+            os.path.basename(filename).startswith('tin.time')
+            and os.path.basename(filename).endswith('.xmf')
+        ):
+            raise ValueError(
+                "'{}' is not a valid TIN .xmf file.'".format(filename)
+            )
+    except (TypeError, AttributeError) as e:
+        raise TypeError(
+            "'{}' is not a valid filename.".format(filename)
+        ) from e
+
+    tree = ET.parse(filename)
+    root = tree.getroot()
+    domain = root.find('Domain')
+    grid0 = domain.find('Grid')
+    grid1 = grid0.find('Grid')
+    for child in grid1.findall('Attribute'):
+        if child.attrib['Name'] == 'Sealevel':
+            di = child.find('DataItem')
+            break
+    else:
+        raise AttributeError("Sea level not found in {}".format(filename))
+    func = di.attrib['Function']
+    sl = float(func.split()[-1])
+    return sl
