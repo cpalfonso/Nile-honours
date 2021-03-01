@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## This script requires ffmpeg
+
 scenario="sealevel"
 framerate="5"  # 5 FPS (1s/Myr)
 
