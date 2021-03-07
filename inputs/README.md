@@ -6,4 +6,4 @@ Alternatively, run the file named `setup.sh` in the main directory to download a
 
 <br><br>
 
-![alt text](./fig.png "Hybrid scenario model initial landscape at 40&nbsp;Ma")
+![alt text](../doc/input.png "Hybrid scenario model initial landscape at 40&nbsp;Ma")

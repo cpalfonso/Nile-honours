@@ -13,4 +13,4 @@ These snapshots can then be used to create an animation of the model evolution t
 
 <br><br>
 
-![alt text](./results/fig.png "Hybrid scenario model results at 0&nbsp;Ma (present day)")
+![alt text](./doc/result.png "Hybrid scenario model results at 0&nbsp;Ma (present day)")

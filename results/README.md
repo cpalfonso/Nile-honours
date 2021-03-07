@@ -6,4 +6,4 @@ The outputs of the backward models are not particularly significant, since they 
 
 <br><br>
 
-![alt text](./fig.png "Hybrid scenario model results at 0&nbsp;Ma (present day)")
+![alt text](../doc/result.png "Hybrid scenario model results at 0&nbsp;Ma (present day)")
