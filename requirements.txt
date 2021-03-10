@@ -1,0 +1,12 @@
+numpy>=1.19.5
+matplotlib>=3.3.4
+scipy>=1.5.3
+pandas>=1.1.5
+scikit_image>=0.17.2
+Shapely>=1.7.1
+geopandas>=0.9.0
+gFlex>=1.1.0
+h5py>=3.1.0
+netCDF4>=1.5.6
+Cartopy>=0.18.0
+badlands>=2.2.1
