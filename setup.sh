@@ -15,10 +15,10 @@ echo "Done"
 # Download data from Zenodo
 [[ ! -d "tmp" ]] && mkdir -p "tmp"
 zip_url="https://zenodo.org/record/4321853/files/data-bundle.zip"
-zip_filename="data-bundle.zip"
+zip_filename="data-bundle"
 echo "Downloading files from ${zip_url}"
-wget -O "${zip_filename}" "${zip_url}"
-tar -xz --directory "tmp" -f "${zip_filename}"
+wget -O "${zip_filename}.zip" "${zip_url}"
+unzip -oq "${zip_filename}" -d "tmp"
 # Copy to inputs directory
 for scenario in "hybrid" "sealevel" "no-dyntopo"; do
     cp -R "tmp/data-bundle/${scenario}/" "inputs/${scenario}/data/"
