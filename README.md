@@ -8,8 +8,13 @@ In order to run the models, `cd` into the appropriate subdirectory within the `s
 Model outputs will be placed in the `results/{model_name}` directory.
 Running the models requires an installation of *Badlands* ([https://github.com/badlands-model/badlands](https://github.com/badlands-model/badlands)) in your Python environment.
 
+Alternatively, the scripts can be run in a Docker environment.
+To do this, make sure your working directory is set to the root directory of this repository (where `Dockerfile` is located), then run the command `docker build -t nile-honours .`.
+After this is complete, run the command `docker run -itv "${PWD}":/home --name nile-honours nile-honours`.
+This will create a Docker container including all of the Python packages required to run the models.
+
 To create visual snapshots of the model results, run the `visualise_results.py` Python script for a given model (i.e. `python scripts/{model_name}/visualise_results.py`).
-These snapshots can then be used to create an animation of the model evolution through time using the `create_animations.sh` script (requires FFmpeg: [ffmpeg.org](https://ffmpeg.org)).
+These snapshots can then be used to create an animation of the model evolution through time using the `create_animations.sh` script (requires FFmpeg: [ffmpeg.org](https://ffmpeg.org); FFmpeg is also included in the Docker container).
 
 <br><br>
 
